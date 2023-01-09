@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+#backgroundImage {
+    background: url(/Users/alexia.lorenza.martinel/Desktop/ironhack/day1/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+}
+
+ol {
+    /* 1. Remove the default list style */
+    list-style: none;
+}
+
+ol>li {
+    /* 2. Create a custom list counter */
+    counter-increment: listcounter;
+}
+
+ol>li::before {
+    /*3. Set the new style for the list markers */
+    content: counter(listcounter) ")";
+}
+
+ul {
+    /* 1. Remove the default list style */
+    list-style: none;
+}
+
+ul>li {
+    /* 2. Create a custom list counter */
+    counter-increment: listcounter;
+}
+
+ul>li::before {
+    /*3. Set the new style for the list markers */
+    content:  "-";
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 150px;
+    padding-top: 250px;
+}
+
+.underText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 80px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.info{
+    display:flex;
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    color: rgb(204, 204, 204);
+    margin-left: 80px;
+    margin-right:80px;
+}
+
+.ingredientsDirections{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 80px;
+        font-size: 20px;
+        margin-bottom: 10px;
+}
